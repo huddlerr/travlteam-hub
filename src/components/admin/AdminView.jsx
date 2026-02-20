@@ -27,9 +27,8 @@ export default function AdminView() {
   const activeTotal = allTasks.filter(t => t.status === "active").length;
   const blockedTotal = allTasks.filter(t => t.status === "blocked").length;
   const totalTasks = allTasks.length;
-  const deadline = new Date("2026-02-23");
-  const now = new Date();
-  const daysLeft = Math.max(0, Math.ceil((deadline - now) / (1000 * 60 * 60 * 24)));
+  const waitingTotal = allTasks.filter(t => t.status === "waiting").length;
+  const nextTotal = allTasks.filter(t => t.status === "next").length;
 
   if (!loaded) {
     return (
@@ -44,8 +43,8 @@ export default function AdminView() {
       {/* Stats row */}
       <div style={{ display: "flex", gap: 6, flexWrap: "wrap", marginBottom: 12 }}>
         {[
-          { value: `${daysLeft}d`, label: "TO DEADLINE", color: daysLeft <= 5 ? C.red : daysLeft <= 10 ? C.amber : C.blue },
           { value: `${doneTotal}/${totalTasks}`, label: "DONE", color: C.green },
+          { value: String(nextTotal), label: "NEXT", color: C.blue },
           { value: String(activeTotal), label: "ACTIVE", color: C.amber },
           { value: String(blockedTotal), label: "BLOCKED", color: blockedTotal > 0 ? C.red : C.textDim },
           { value: `${Math.round((doneTotal / totalTasks) * 100)}%`, label: "COMPLETE", color: C.blue },

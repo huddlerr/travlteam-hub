@@ -13,7 +13,7 @@ export default function App() {
         <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
           <span style={{ fontSize: 20 }}>🏟️</span>
           <span style={{ fontSize: 15, fontWeight: 800, color: C.white }}>TravlTeam</span>
-          <span style={{ fontSize: 11, color: C.blue, background: C.blue + "15", padding: "2px 10px", borderRadius: 20, fontWeight: 600 }}>Hub v2</span>
+          <span style={{ fontSize: 11, color: C.blue, background: C.blue + "15", padding: "2px 10px", borderRadius: 20, fontWeight: 600 }}>Hub v3</span>
         </div>
 
         {/* View toggle */}
@@ -47,8 +47,8 @@ export default function App() {
       {/* Subtitle */}
       <div style={{ padding: "6px 20px 0", fontSize: 12, color: C.textMuted }}>
         {view === "project"
-          ? "11 views across tech, business, and execution — updated Feb 19, 2026"
-          : "Editable task tracker — QA sprint to Feb 23 deadline"
+          ? "11 views across tech, business, and execution — updated Feb 20, 2026"
+          : "Editable task tracker — v1 complete, v2 rewrite + web sharing next"
         }
       </div>
 
