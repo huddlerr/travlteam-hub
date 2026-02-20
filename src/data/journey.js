@@ -1,19 +1,19 @@
 export const sarahSteps = [
-  { action: "Opens TravlTeam", detail: "Sees empty state: 'Plan your first tournament trip'", icon: "📱" },
-  { action: "Creates 'Dallas Cup U14'", detail: "Picks soccer, enters tournament name, dates, location", icon: "📋" },
-  { action: "Searches lodging", detail: "Applies filters: Team Block Rates, Indoor Pool, Breakfast, <$150", icon: "🔎" },
-  { action: "Views results", detail: "Map pins + list view. Taps Hampton Inn → bottom sheet with details", icon: "🗺️" },
-  { action: "Adds to plan + note", detail: "'Call front desk for team rate — mention Dallas Cup'", icon: "💾" },
-  { action: "Adds food nearby", detail: "Restaurant search. Adds note: 'Has private room for team dinner'", icon: "🍽️" },
-  { action: "Taps Share", detail: "Gets link: travlteam.app/p/abc12xyz", icon: "🔗" },
-  { action: "Texts to parent group", detail: "'Here's what I found for Dallas Cup housing — add your picks!'", icon: "💬" },
+  { action: "Opens TravlTeam", detail: "Sees My Trips screen. Empty state: 'Plan your first trip' with Find Tournament + Create Custom options", icon: "📱" },
+  { action: "Taps + button (FAB)", detail: "TripBuilder opens. Searches 'Dallas Cup' — tournament auto-fills name, dates, location, sport", icon: "📋" },
+  { action: "Searches lodging near venue", detail: "VenueSearch: Google Places results with sport-specific filters — Pool, Bus Parking, Early Breakfast, Team Rates", icon: "🔎" },
+  { action: "Toggles map and list view", detail: "Blue hotel markers + purple restaurant markers + gold tournament marker. Distance from venue shown.", icon: "🗺️" },
+  { action: "Adds Hampton Inn to trip", detail: "Bottom sheet: select date, add note 'Call front desk for team rate — mention Dallas Cup'. Status: Suggested.", icon: "💾" },
+  { action: "Adds dinner restaurant", detail: "Foursquare-powered search. Filters: Group Friendly, Kid Friendly. Adds with meal tag: Dinner, 6:00 PM.", icon: "🍽️" },
+  { action: "Views day-by-day itinerary", detail: "TripDetail: day tabs (FRI/SAT/SUN), weather per day, quick stats (1 hotel, 4 meals, 8 going)", icon: "📅" },
+  { action: "Invites the team", detail: "InviteMembers: copies share code, texts to parent group chat. RSVPRing shows 0/12 confirmed.", icon: "🔗" },
 ];
 
 export const marcusSteps = [
-  { action: "Taps link in group text", detail: "Opens in browser — sees Sarah's full plan instantly", icon: "📱" },
-  { action: "Browses venues", detail: "Sees Hampton Inn + note, Chili's + note. Map view available.", icon: "👀" },
-  { action: "Wants to suggest lodging", detail: "Taps 'Sign in to contribute' — enters phone number", icon: "✍️" },
-  { action: "Auto-joins as editor", detail: "No invite needed. Share link = access. Now a collaborator.", icon: "🤝" },
-  { action: "Adds Fairfield Inn", detail: "Found it's $20 cheaper. Adds note: 'Pool is bigger'", icon: "🏨" },
-  { action: "Sarah gets notified", detail: "'Marcus added Fairfield Inn to Dallas Cup trip'", icon: "🔔" },
+  { action: "Gets share code in group text", detail: "Opens TravlTeam app, enters share code on Trips screen", icon: "📱" },
+  { action: "Joins trip instantly", detail: "Auto-added as member with 'pending' RSVP. Sees Sarah's full itinerary.", icon: "🤝" },
+  { action: "RSVPs 'Going'", detail: "Taps Going button. RSVPRing updates: 1 of 12 confirmed. Haptic feedback.", icon: "✅" },
+  { action: "Browses the itinerary", detail: "Sees Hampton Inn (Suggested), restaurants by day. Swipes items for options.", icon: "👀" },
+  { action: "Suggests Fairfield Inn", detail: "Opens VenueSearch, finds it's $20 cheaper. Adds with note: 'Pool is bigger, free parking'", icon: "🏨" },
+  { action: "Creates his own trip", detail: "Next tournament: taps FAB → creates 'State Cup Phoenix' → invites his carpool group → cycle repeats.", icon: "🔄" },
 ];
